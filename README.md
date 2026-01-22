@@ -1,16 +1,40 @@
-# React + Vite
+# 🚛 Comercializadora del Llano - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page corporativa desarrollada para **Comercializadora del Llano**, una empresa dedicada al transporte de carga y la comercialización de productos ferreteros, agropecuarios y materiales de construcción en la región del Meta, Colombia.
 
-Currently, two official plugins are available:
+El proyecto está enfocado en ofrecer una experiencia visual moderna, premium y clara, mostrando la información clave de la empresa, sus servicios y los métodos de contacto para clientes potenciales.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Diseño moderno y responsive.
+- Interfaz premium con Tailwind CSS.
+- Secciones informativas de la empresa.
+- Presentación de servicios.
+- Llamados a la acción (CTA).
+- Formulario de contacto.
+- Animaciones con Framer Motion.
+- Arquitectura basada en componentes.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías usadas
+
+- React  
+- Vite  
+- Tailwind CSS  
+- Framer Motion  
+- JavaScript  
+
+---
+
+## 🚀 Instalación y uso
+
+Clona el repositorio e instala las dependencias:
+
+```bash
+git clone https://github.com/charlymora332/comercializadora-RC-llano-v2.git
+cd tu-repo
+npm install
+npm run dev
