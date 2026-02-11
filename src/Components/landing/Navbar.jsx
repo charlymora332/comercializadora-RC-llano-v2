@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Truck, Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Truck, Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: 'Inicio', href: '#' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Cobertura', href: '#' },
-  { label: 'Contacto', href: '#contacto' }
+  { label: "Inicio", href: "#" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Nosotros", href: "#nosotros" },
+  // { label: 'Cobertura', href: '#' },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export default function Navbar() {
@@ -19,8 +19,8 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -30,9 +30,9 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-black/80 backdrop-blur-xl border-b border-gray-800/50' 
-            : 'bg-transparent'
+          isScrolled
+            ? "bg-black/80 backdrop-blur-xl border-b border-gray-800/50"
+            : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-6 lg:px-12">
@@ -44,7 +44,9 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:block">
                 <span className="text-white font-bold">Comercializadora</span>
-                <span className="text-blue-400 font-medium ml-1">del Llano</span>
+                <span className="text-blue-400 font-medium ml-1">
+                  del Llano
+                </span>
               </div>
             </a>
 
@@ -64,10 +66,10 @@ export default function Navbar() {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Button 
-                className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-6 rounded-full shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all"
-              >
-                Cotizar Ahora
+              <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-6 rounded-full shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all">
+                <a href="https://wa.link/mh1ifh" target="_blank">
+                  Cotizar Ahora
+                </a>
               </Button>
             </div>
 
@@ -76,7 +78,11 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden w-10 h-10 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center text-white"
             >
-              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMobileMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -113,10 +119,10 @@ export default function Navbar() {
                   transition={{ delay: 0.5 }}
                   className="pt-6"
                 >
-                  <Button 
-                    className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-6 text-lg rounded-full"
-                  >
-                    Cotizar Ahora
+                  <Button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-6 text-lg rounded-full">
+                    <a href="https://wa.link/mh1ifh" target="_blank">
+                      Cotizar Ahora
+                    </a>
                   </Button>
                 </motion.div>
               </div>

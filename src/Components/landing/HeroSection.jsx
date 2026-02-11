@@ -144,7 +144,9 @@ export default function HeroSection() {
               className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold px-8 py-6 text-lg rounded-full shadow-lg shadow-blue-500/25 transition-all duration-300 hover:shadow-blue-500/40 hover:scale-105"
             >
               <Truck className="w-5 h-5 mr-2" />
-              Solicitar Cotización
+                <a href="https://wa.link/mh1ifh" target="_blank">
+                Solicitar Cotización
+              </a>
             </Button>
             <Button 
               size="lg"
@@ -152,7 +154,9 @@ export default function HeroSection() {
               className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:border-blue-400 px-8 py-6 text-lg rounded-full transition-all duration-300"
             >
               <MapPin className="w-5 h-5 mr-2" />
-              Ver Cobertura
+              <a href="https://maps.app.goo.gl/dZeLFbGDa2wCx24KA" target="_blank" rel="noopener noreferrer">
+                Ver Cobertura
+              </a>
             </Button>
           </motion.div>
 

@@ -5,7 +5,7 @@ import { ArrowRight, Phone, Mail, MessageCircle } from 'lucide-react';
 
 export default function CTASection() {
   return (
-    <section className="relative py-32 bg-[#0a0a0a] overflow-hidden">
+    <section className="relative py-32 bg-[#0a0a0a] overflow-hidden" id='contacto'>
       {/* Dynamic background */}
       <div className="absolute inset-0">
         {/* Gradient mesh */}
@@ -123,17 +123,17 @@ export default function CTASection() {
               </div>
             </a>
             
-            <a href="mailto:contacto@comercializadoradellano.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
+            <a href="mailto:Comercializadorarcdelllano@gmail.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
               <div className="w-12 h-12 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center group-hover:border-cyan-500/50 transition-colors">
                 <Mail className="w-5 h-5 text-cyan-400" />
               </div>
               <div className="text-left">
                 <div className="text-xs uppercase tracking-wider text-gray-500">Email</div>
-                <div className="font-medium">contacto@cdellano.com</div>
+                <div className="font-medium">Comercializadorarcdelllano@gmail.com</div>
               </div>
             </a>
             
-            <a href="https://wa.me/573177777460" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
+            <a href="https://wa.link/mh1ifh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
               <div className="w-12 h-12 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center group-hover:border-green-500/50 transition-colors">
                 <MessageCircle className="w-5 h-5 text-green-400" />
               </div>

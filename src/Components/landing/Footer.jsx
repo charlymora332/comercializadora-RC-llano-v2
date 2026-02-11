@@ -4,10 +4,10 @@ import { Truck, MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Twitter } fr
 
 const footerLinks = {
   servicios: [
-    { label: 'Transporte de Carga', href: '#' },
-    { label: 'Productos Ferreteros', href: '#' },
-    { label: 'Productos Agropecuarios', href: '#' },
-    { label: 'Materiales de Construcción', href: '#' }
+    { label: 'Transporte de Carga', href: '#servicios' },
+    { label: 'Productos Ferreteros', href: '#servicios' },
+    { label: 'Productos Agropecuarios', href: '#servicios' },
+    { label: 'Materiales de Construcción', href: '#servicios' }
   ],
   empresa: [
     { label: 'Sobre Nosotros', href: '#nosotros' },
@@ -34,11 +34,11 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#050505] border-t border-gray-900">
       {/* Top decoration */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent " />
       
       <div className="container mx-auto px-6 lg:px-12">
         {/* Main Footer Content */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 items-center">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <motion.div
@@ -61,24 +61,40 @@ export default function Footer() {
                 Transporte de carga y comercialización de productos ferreteros, 
                 agropecuarios y materiales de construcción en la región del Meta.
               </p>
+              
+
+      
+            </motion.div>
+          </div>
+
+
+           <div className="lg:col-span-2">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-6"
+            >
+             
 
               {/* Contact Info */}
               <div className="space-y-3">
-                <a href="#" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm">
+                <a href="https://maps.app.goo.gl/dZeLFbGDa2wCx24KA" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm" target="_blank" rel="noopener noreferrer">
                   <MapPin className="w-4 h-4 text-blue-400 flex-shrink-0" />
                   <span>Villavicencio, Meta - Colombia</span>
                 </a>
-                <a href="tel:+573177777460" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm">
+                <a href="tel:+573177777460" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm" target='_blank'>
                   <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
                   <span>+57 317 777 7460</span>
                 </a>
-                <a href="mailto:contacto@cdellano.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm">
+                <a href="mailto:Comercializadorarcdelllano@gmail.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm" target='_blank'>
                   <Mail className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                  <span>contacto@cdellano.com</span>
+                  <span>Comercializadorarcdelllano@gmail.com</span>
                 </a>
               </div>
             </motion.div>
           </div>
+          
 
           {/* Links Columns */}
           <motion.div
@@ -99,7 +115,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -115,9 +131,9 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </motion.div> */}
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -133,17 +149,17 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-6 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="py-6 border-t border-gray-900 flex flex-col md:flex-row justify-center items-center  gap-4">
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Comercializadora del Llano. Todos los derechos reservados.
           </p>
           
           {/* Social Links */}
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             {socialLinks.map((social, index) => (
               <a
                 key={index}
@@ -154,7 +170,7 @@ export default function Footer() {
                 <social.icon className="w-4 h-4" />
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -122,12 +122,12 @@ export default function ServicesSection() {
                 </p>
 
                 {/* Arrow indicator */}
-                <div className="relative mt-6 flex items-center gap-2 text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="relative mt-6 flex items-center gap-2 text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-sm font-medium">Conocer más</span>
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}
